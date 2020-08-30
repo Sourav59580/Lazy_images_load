@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy image load</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1529973565457-a60a2ccf750d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1576843776838-032ac46fbb93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1456418047667-56bcd35b1a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1551615593-ef5fe247e8f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1575980726530-4e673bfa0ad8?ixlib=rb-1.2.1&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1550984754-8d1b067b0239?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1539451652256-f485173cab9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1528826134410-fd8d3f21789d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 rounded">
+                    <div class="card-body bg-white shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1491849299366-f0fe242bda47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=10&q=60"
+                            class="w-100 rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="./js/app.js"></script>
+</body>
+
+</html>
